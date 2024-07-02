@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irenic Bibliotheca</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('image/bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .logo-text {
+            color: white;
+            margin-left: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            text-align: center;
+            color: #fcfcfc;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0 30px;
+        }
+
+        .search-login {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-btn, .login-btn {
+            background-color: #383e33;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .about-container {
+            display: flex;
+            background:	#8FBC8B;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            color: black;
+        }
+
+        .about-left {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-img {
+            width: 200px;
+            margin-right: auto; 
+            margin-left: auto;
+            display: block;
+            padding: 10px; 
+        }
+
+        .about-links {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .about-links li {
+            margin-bottom: 10px; 
+        }
+
+        .about-links li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .members {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .member {
+            text-align: center;
+            flex-basis: 45%; 
+            margin-bottom: 20px;
+        }
+
+        .member img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        .about-right {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column; 
+        }
+
+        .contact-info {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px; 
+        }
+
+        .contact-info li span {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .faq-container {
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 2000px;
+	    max-height: 500px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .accordion {
+            background-color: #556B2F;
+            color: black;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+            border-radius: 8px; 
+            margin-bottom: 5px;
+        }
+
+        .active, .accordion:hover {
+            background-color: #E0FFFF;
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: #F0FFFF;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: #F0FFFF;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            border-radius: 8px; 
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/corporatelogo.jpg" alt="Irenic Bibliotheca Logo" width="50" height="50">
+            <span class="logo-text">
+                IRENIC<br>BIBLIOTHECA
+            </span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="linkedin.html">LinkedIn</a>
+            <a href="tutorial.html">LinkedIn Tutorial</a>
+            <a href="aboutus.html">About Us</a>
+            <div class="search-login">
+                <input type="text" placeholder="Search...">
+                <button class="search-btn">🔍</button>
+                <button class="login-btn">Log In</button>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="about-container">
+            <div class="about-left">
+                <img src="image/corporatelogo.jpg" alt="Irenic Bibliotheca Logo" class="logo-img">
+                <ul class="about-links">
+                    <li><h1>Our Background</h1></li>
+			<p style="text-align: justify;">Irenic Bibliotheca is an organisation that was created to supply information  to the  users. The term "irenic" suggests something peaceful or promoting peace, and "bibliotheca" is Latin for library.</p>
+<p style="text-align: justify;">Our objective in introducing LinkedIn to the user are to support their career development, enhance networking opportunities and improve digital literacy.</p>
+<p style="text-align: justify;">This helps users build a professional online presence, access mentorship and job opportunities, gain market insights, develop new skills through LinkedIn learning and leverage premium resources available at libraries. This initiative equips students with the necessary tools for success in the modern job market</p><br>
+
+                    <li><h1>Services</h1></li>
+<br><p style="text-align: justify;">1. Publishing and Bookselling: They could publish books or sell rare and scholarly editions.</p>
+
+<p style="text-align: justify;">2. Library Services: They might provide services related to libraries, such as cataloging, archiving, or digitization.</p>
+
+<p style="text-align: justify;">3. Educational Services: They could offer educational resources, courses, or workshops related to literature, history, or culture.</p>
+
+<p style="text-align: justify;">4. Cultural Conservation: They might focus on preserving cultural heritage through literature and historical documents.</p>
+
+<p style="text-align: justify;">5. Online Resources: They could have an online platform offering digital books, academic articles, or curated collections.</p>
+<br>
+                </ul>
+            </div>
+            <div class="about-right">
+                <h2>Corporate Members:</h2>
+                <div class="members">
+                    <div class="member">
+                        <img src="image/husna.jpg" alt="Ainun Husna">
+                        <p>Ainun Husna Kamaruzzaman</p>
+                    </div>
+                    <div class="member">
+                        <img src="image/athirah.jpg" alt="Nur Athirah">
+                        <p>Nur Athirah Binti Mohamad Yatim</p>
+                    </div>
+                    <div class="member">
+                        <img src="image/abidah.jpg" alt="Nurul Abidah">
+                        <p>Nurul Abidah Binti Mohd Yazid</p>
+                    </div>
+                    <div class="member">
+                        <img src="image/dini.jpg" alt="Noordini Akilah">
+                        <p>Noordini Akilah Binti Muhyidin</p>
+                    </div>
+                    <div class="member">
+                        <img src="image/ky.jpg" alt="Nur Auni Aqilah">
+                        <p>Nur Auni Aqilah Binti Nur Irwan Effendy</p>
+                    </div>
+                </div>
+                <h2>Our Contact</h2>
+                <ul class="contact-info">
+                    <li><span>📞</span> 012-4552665</li>
+                    <li><span>🌐</span> www.irenicbibliotheca.com</li>
+                    <li><span>📧</span> Irenicbibliotheca@gmail.com</li>
+                    <li><span>📍</span> Shah Alam, Selangor.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <div class="faq-container">
+        <center><h1 style="color: white; font-family: Arial;">Hello, How Can We Help? (FAQs)</h1></center>
+        <button class="accordion">What Irenic Bibliotheca do with My Personal Information?</button>
+        <div class="panel">
+            <p>We will store your personal information private under General Data Protection Regulation and we value your approval to use your personal information.</p>
+        </div>
+
+        <button class="accordion">How can Irenic Bibliotheca Benefit the Users?</button>
+        <div class="panel">
+            <p>1. We provide users with easy access to a wide range of information and resources, from academic articles and books to multimedia content.</p>
+
+           <p>2. We further promote digital literacy by offering tutorials and resources on the way to effectively use various online platform for learning including LinkedIn.</p>
+
+            <p>3. Users can access personalised help through one-on-one sessions with librarians or career counselors to receive tailored advice and support.</p>
+        </div>
+
+        <button class="accordion">Do Users have Equal Access to the Website?</button>
+        <div class="panel">
+            <p>Yes, Irenic Bibliotheca ensures that all users, regarless of their background, have access to premium resources and tools that might otherwise be unaffordable.</p>
+        </div>
+
+        <button class="accordion">Others</button>
+        <div class="panel">
+            <p>If you have further questions which are not listed above, feel free to contact us on any of our social medias. We will surely do our best to provide the answers to your questions.</p>
+        </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+        }
+    </script>
+</body>
+</html>
